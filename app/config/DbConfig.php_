@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Return array with db connection settings
+ */
+
+return array(
+    'host'     =>  'localhost',
+    'user'     =>  'user',
+    'password' =>  'password',
+    'dbname'   =>  'dbname',
+    
+);
