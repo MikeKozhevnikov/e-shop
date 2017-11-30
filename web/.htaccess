@@ -1,0 +1,14 @@
+# default charset on site
+AddDefaultCharset utf-8
+
+# activate rewrite rules on site
+# mod_rewrite must be activated in Apache config
+RewriteEngine on
+RewriteBase /
+
+# rewrite rules
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# all requests goes to index.php
+RewriteRule ^(.*)$ index.php
